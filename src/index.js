@@ -1,17 +1,16 @@
+// Importa a biblioteca React, que é necessária para criar componentes React.
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// Importa a biblioteca ReactDOM, que é responsável por renderizar componentes React no DOM (Document Object Model).
+import ReactDOM from 'react-dom';
+
+// Importa o componente principal da aplicação, que provavelmente é o componente "App" que foi criado em algum lugar do projeto.
+import App from './App';
+
+// Usa o ReactDOM para renderizar o componente "App" no elemento com o ID "root" no HTML.
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

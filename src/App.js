@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// Importa a biblioteca React para criar componentes React.
+import React from 'react';
 
+// Importa o componente personalizado LastFMSearch.
+import LastFMSearch from './Components/LastFMSearch';
+
+// Define o componente funcional "App".
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Renderiza o componente "LastFMSearch". */}
+      <LastFMSearch />
     </div>
   );
 }
 
+// Exporta o componente "App" como o componente principal da aplicação.
 export default App;
